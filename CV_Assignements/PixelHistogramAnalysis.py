@@ -2,8 +2,10 @@ import cv2 as cv
 import matplotlib.pyplot as plt
 import numpy as np
 
+file_location=R"D:\visual studio stuff\iBot_DC\CV_Assignements\sampleImage.jpg"
+
 #load grayscale image
-img = cv.imread(R"D:\visual studio stuff\Practice\Python\CVPractice\sampleImage.jpg",cv.IMREAD_GRAYSCALE)
+img = cv.imread(file_location, cv.IMREAD_GRAYSCALE)
 
 #histogram
 hist = cv.calcHist([img], [0], None, [256], [0, 256])
@@ -27,5 +29,6 @@ plt.title("Histogram")
 plt.xlabel("Intensity")
 plt.ylabel("Pixel Count")
 
-plt.text(170, max(hist)*0.7,f"Mean: {mean_val:.2f}\n"f"Median: {median_val:.2f}\n"f"Std: {std_val:.2f}",bbox=dict(facecolor="white", alpha=0.8))
+plt.text(80, max(hist)*0.8,f"Mean: {mean_val:.2f}\n"f"Median: {median_val:.2f}\n"f"Std: {std_val:.2f}")
 plt.show()
+

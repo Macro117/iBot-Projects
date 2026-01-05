@@ -1,7 +1,8 @@
 import cv2 as cv
 import matplotlib.pyplot as plt
 
-img = cv.imread(R"D:\visual studio stuff\Practice\Python\CVPractice\sampleImage.jpg")
+path = R"D:\visual studio stuff\iBot_DC\CV_Assignements\sampleImage.jpg"
+img = cv.imread(path)
 
 #blur
 img_blur = cv.GaussianBlur(img, (7,7), 0)

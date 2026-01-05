@@ -51,11 +51,11 @@ def display_side_by_side(original_gray, sketch):
     plt.tight_layout()
     plt.show()
 
-#save sketch
+#save img
 def save_sketch(sketch, output_path):
     cv.imwrite(output_path, sketch)
 
-
+#main
 input_path = R"D:\visual studio stuff\Practice\Python\CVPractice\sampleImage.jpg"
 output_path = R"D:\visual studio stuff\Practice\Python\CVPractice\pencil_sketch.jpg"
 
