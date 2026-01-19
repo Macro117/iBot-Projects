@@ -1,0 +1,6 @@
+Total Circles: 1
+Min Radius: 161
+Max Radius: 161
+Average Radius: 161.0
+
+ID 0: Center=(505, 313), Radius=161
